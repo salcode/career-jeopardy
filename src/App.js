@@ -1,4 +1,5 @@
 import './App.css';
+import Board from './components/Board';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Board />
     </div>
   );
 }
