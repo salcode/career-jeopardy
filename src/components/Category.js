@@ -13,7 +13,7 @@ export default function Category({
               () => console.log(question.text)
             }
           >
-            {index}: {question.text}
+            ${100*(index+1)}
           </button>
       )
     }
