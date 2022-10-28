@@ -1,5 +1,6 @@
 import './App.css';
 import Board from './components/Board';
+import boardData from './data/boardData.js';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Board />
+      <Board boardData={boardData} />
     </div>
   );
 }
