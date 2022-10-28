@@ -1,5 +1,6 @@
 export default function Category({
   category,
+  setQuestion,
 }) {
   return <div className="category">
     <h2 className="cell">{category.title}</h2>
@@ -10,7 +11,7 @@ export default function Category({
             className="cell"
             key={question.text}
             onClick={
-              () => console.log(question.text)
+              () => setQuestion(question.text)
             }
           >
             ${100*(index+1)}

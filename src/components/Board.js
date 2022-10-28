@@ -3,6 +3,7 @@ import Category from './Category';
 export default function Board({
   boardData,
   question,
+  setQuestion,
 }) {
   if (question) {
     return <h1>{question}</h1>;
@@ -15,6 +16,7 @@ export default function Board({
           <Category
             category={category}
             key={category.title}
+            setQuestion={setQuestion}
           />
         )
       )
