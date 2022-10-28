@@ -6,12 +6,12 @@ export default function Category({
     {
       category.questions?.map(
         (question) =>
-          <section
+          <button
             className="cell"
             key={question.text}
           >
             {question.text}
-          </section>
+          </button>
       )
     }
   </div>;
