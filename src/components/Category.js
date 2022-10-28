@@ -5,9 +5,13 @@ export default function Category({
     <h2 className="cell">{category.title}</h2>
     {
       category.questions?.map(
-        (question) => <section className="cell" key={question.text}>
-          {question.text}
-        </section>
+        (question) =>
+          <section
+            className="cell"
+            key={question.text}
+          >
+            {question.text}
+          </section>
       )
     }
   </div>;
