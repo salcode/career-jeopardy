@@ -5,6 +5,9 @@ body {
 	display: flex;
 	height: 100vh;
 }
+#root {
+	width: 100%;
+}
 .App {
 	display: flex;
 	flex-direction: column;
