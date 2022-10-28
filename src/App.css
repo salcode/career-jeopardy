@@ -1,10 +1,6 @@
 body {
 	display: flex;
 }
-.root {
-	display: flex;
-	height: 100vh;
-}
 #root {
 	width: 100%;
 }
