@@ -9,6 +9,9 @@ export default function Category({
           <button
             className="cell"
             key={question.text}
+            onClick={
+              () => console.log(question.text)
+            }
           >
             {question.text}
           </button>
