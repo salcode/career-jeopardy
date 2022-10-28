@@ -5,7 +5,7 @@ export default function Category({
     <h2 className="cell">{category.title}</h2>
     {
       category.questions?.map(
-        (question) =>
+        (question, index) =>
           <button
             className="cell"
             key={question.text}
@@ -13,7 +13,7 @@ export default function Category({
               () => console.log(question.text)
             }
           >
-            {question.text}
+            {index}: {question.text}
           </button>
       )
     }
