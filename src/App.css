@@ -44,8 +44,12 @@ body {
 }
 .cell {
 	height: 25%;
-	margin: 0;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 section.cell {
 	border: 1px solid black;
+	color: gold;
 }
