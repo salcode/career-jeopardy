@@ -1,7 +1,18 @@
-export default function Board() {
-  return <table>
-      <tr>
-        <th>This is my board</th>
-      </tr>
-    </table>;
+import Category from './Category';
+
+export default function Board({
+  boardData,
+}) {
+  return <div className="board-wrapper">
+    {
+      boardData.categories.map(
+        (category) => (
+          <Category
+            category={category}
+            key={category.title}
+          />
+        )
+      )
+    }
+  </div>;
 }
