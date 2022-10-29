@@ -21,6 +21,12 @@ function App() {
       </header>
       <Board
         boardData={state.boardData}
+        clearQuestion={
+          (question) => dispatch({
+            type: 'setQuestion',
+            value: '',
+          })
+        }
         question={state.question}
         setQuestion={
           (question) => dispatch({

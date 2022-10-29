@@ -3,11 +3,13 @@ import Question from './Question';
 
 export default function Board({
   boardData,
+  clearQuestion,
   question,
   setQuestion,
 }) {
   if (question) {
     return <Question
+      clearQuestion={clearQuestion}
       question={question}
     />;
   }
