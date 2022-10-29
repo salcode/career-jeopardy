@@ -1,4 +1,5 @@
 import Category from './Category';
+import Question from './Question';
 
 export default function Board({
   boardData,
@@ -6,7 +7,9 @@ export default function Board({
   setQuestion,
 }) {
   if (question) {
-    return <h1>{question}</h1>;
+    return <Question
+      question={question}
+    />;
   }
   // There is no question, display the board.
   return <div className="board-wrapper">
