@@ -54,3 +54,8 @@ button.cell {
 	color: gold;
 	font-size: 400%;
 }
+button.cell:hover,
+button.cell:focus,
+button.cell:focus-visible {
+	border-color: gold;
+}
