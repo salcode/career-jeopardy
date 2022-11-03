@@ -5,6 +5,8 @@ body {
 	width: 100%;
 }
 .App {
+	background-color: #2a3698;
+	color: #fff;
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
