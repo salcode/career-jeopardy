@@ -7,6 +7,6 @@ export default function Question({
   return <EscapeOutside
     onEscapeOutside={clearQuestion}
   >
-    <h1>{question}</h1>
+    <h1 class="question">{question}</h1>
   </EscapeOutside>
 }
