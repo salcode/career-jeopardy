@@ -6,22 +6,20 @@ export default function reducer(state, action) {
         boardData: {
           ...state.boardData,
           categories: (state?.boardData?.categories ?? []).map(
-            (category) => {
-              return {
-                ...category,
-                questions: (category?.questions ?? []).map(
-                  (question) => {
-                    if (action.value === question.text) {
-                      return {
-                        ...question,
-                        isRead: true,
-                      }
+            (category) => ({
+              ...category,
+              questions: (category?.questions ?? []).map(
+                (question) => {
+                  if (action.value === question.text) {
+                    return {
+                      ...question,
+                      isRead: true,
                     }
-                    return question;
                   }
-                )
-              };
-            }
+                  return question;
+                }
+              )
+            })
           ),
         },
       };
