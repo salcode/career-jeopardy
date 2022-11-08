@@ -9,6 +9,7 @@ export default function Category({
         (question, index) =>
           <button
             className="cell"
+            disabled={question?.isRead}
             key={question.text}
             onClick={
               () => setQuestion(question.text)
