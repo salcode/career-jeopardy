@@ -29,10 +29,16 @@ function App() {
         }
         question={state.question}
         setQuestion={
-          (question) => dispatch({
-            type: 'setQuestion',
-            value: question,
-          })
+          (question) => {
+            dispatch({
+              type: 'markRead',
+              value: question,
+            })
+            dispatch({
+              type: 'setQuestion',
+              value: question,
+            })
+          }
         }
       />
     </div>
