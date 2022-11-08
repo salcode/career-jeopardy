@@ -61,6 +61,10 @@ button.cell:focus,
 button.cell:focus-visible {
 	border-color: gold;
 }
+button.cell:disabled {
+	/* set text to match background color */
+	color: #2a3698;
+}
 
 .question {
 	font-size: 500%;
