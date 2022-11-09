@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Mr. Ferrarello
+          Career Day Questions
         </p>
       </header>
       <Board
