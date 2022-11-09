@@ -27,7 +27,7 @@ const boardData = {
           text: 'Do you work in your pajamas?',
         },
         {
-          text: 'Do you ever hangout with co-workers?',
+          text: 'Do you ever hangout with people you work with?',
         },
         {
           text: 'Your company offers flex time, what is that?',
